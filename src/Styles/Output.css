@@ -1,0 +1,58 @@
+/* Output Compnent */
+.OutputContainer {
+	display: flex;
+	flex-direction: column;
+	height: 700px;
+	gap: 16px;
+}
+
+.OutputHeader {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+	margin-top: var(--snd-gutter);
+	margin-bottom: var(--snd-gutter);
+	padding-bottom: 30px;
+	border-bottom: 3px solid black;
+}
+
+.headerLeft {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.headerRight {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+	height: 100%;
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.headerRight>span>svg {
+    margin-right: 10px;
+}
+
+h1 {
+	font-size: 38px;
+	font-weight: 800;
+	color: var(--main-txt-color);
+}
+
+h4 {
+	font-size: 20px;
+	font-weight: 600;
+	color: var(--snd-txt-color);
+	margin-top: 10px;
+}
+
+/* Work Experience */
+
+/* grid-gap: 16px;
+gap: 16px; */

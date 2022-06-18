@@ -105,10 +105,6 @@ h2:not(.first-title){
 	padding: var(--snd-gutter);
 }
 
-.OutputContainer {
-	height: 700px;
-}
-
 /* Input Form Styling */
 .form {
 	display: flex;
@@ -187,66 +183,6 @@ button {
 button:hover {
 	cursor: pointer;
 }
-
-/* Output Compnent */
-
-.OutputHeader {
-	display: grid;
-	grid-template-rows: 1fr;
-	grid-template-columns: 60% 40%;
-	margin-top: var(--snd-gutter);
-	padding-bottom: 30px;
-	margin-bottom: var(--snd-gutter);
-	border-bottom: 3px solid black;
-}
-
-.headerLeft {
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	align-items: flex-start;
-}
-
-h1 {
-	font-size: 38px;
-	font-weight: 800;
-	color: var(--main-txt-color);
-}
-
-h4 {
-	font-size: 20px;
-	font-weight: 600;
-	color: var(--snd-txt-color);
-	margin-top: 10px;
-}
-
-.headerRight {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: flex-start;
-	height: 100%;
-	font-size: 14px;
-	font-weight: 500;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 @media only screen and (max-width: 1230px) {
