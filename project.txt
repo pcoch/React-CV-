@@ -1,0 +1,60 @@
+Following best practices here: https://reactjs.org/docs/thinking-in-react.html 
+This is a test
+1. Outline Component Heirarchy (✅)
+2. Build Static Version In React
+
+1. Component Heirarchy
+
+App
+    Input Container
+        Personal Details
+            Name
+            Title
+            Number
+            Email
+            Location
+            About
+        Work Experience
+            Company
+            Position
+            Start Date
+            End Date
+            Description
+                Delete
+                Add
+        Education
+            Degree
+            University
+            Start Date
+            End Date
+                Delete
+                Add
+
+    Output Container
+        Header
+            Header Left
+                Name
+                Title
+            Header Right
+                Number
+                Email
+                Location
+        Body
+            About Container
+            Work Experience Container
+                Job Container
+                    Title
+                    Company
+                    Start Date
+                    End Date
+                    About
+            Education Container
+                University Container
+                    Course/Program
+                    University
+                    Start Date
+                    End Date
+
+
+
+
