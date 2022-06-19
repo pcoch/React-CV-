@@ -1,14 +1,14 @@
 import React from "react";
-import EducationInput from "./EducationInput";
-import PersonalDetailsInput from "./PersonalDetailsInput";
-import WorkExperienceInput from "./WorkExperienceInput";
+import InputEducation from "./InputEducation";
+import InputPersonalDetails from "./InputPersonalDetails";
+import InputWorkExperience from "./InputWorkExperience";
 
 export default function InputContainer() {
   return (
     <div className="InputContainer">
-      <PersonalDetailsInput />
-      <WorkExperienceInput />
-      <EducationInput />
+      <InputPersonalDetails />
+      <InputWorkExperience />
+      <InputEducation />
     </div>
   );
 }

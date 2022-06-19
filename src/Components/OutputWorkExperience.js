@@ -2,13 +2,21 @@ import React from "react";
 
 export default function OutputWorkExperience() {
   return (
-    <div>
-      WorkExperience Cupidatat sunt anim incididunt nisi labore sunt nulla Lorem
-      elit irure. Aliquip quis excepteur et nostrud enim irure nostrud officia.
-      Et deserunt et aliquip voluptate elit cupidatat. Adipisicing enim minim do
-      anim eiusmod est. Irure laboris anim voluptate proident. Cillum
-      reprehenderit est magna minim. Nostrud ex aute laborum ea irure amet ea
-      ipsum ut non minim anim nisi.
+    <div className="experience-list">
+      <h3>Work Experience</h3>
+      <div className="experience-container">
+        <div className="experience-heading">
+          <h5>Software Engineer</h5>
+          <h5>
+            <span className="company-title">A Software Company | </span>2018 -
+            Present
+          </h5>
+        </div>
+        <p className="experience-body">
+          Ut fugiat minim qui voluptate culpa. Elit nostrud ex ad incididunt
+          incididunt eiusmod. Officia cupidatat culpa commodo nisi nostrud.
+        </p>
+      </div>
     </div>
   );
 }

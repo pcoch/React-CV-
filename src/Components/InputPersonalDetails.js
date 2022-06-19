@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function PersonalDetailsInput() {
+export default function InputPersonalDetails() {
   return (
     <div>
       <h2 className="first-title">Personal Details</h2>

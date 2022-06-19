@@ -1,26 +1,26 @@
 import React from "react";
 
-export default function WorkExperienceInput() {
+export default function InputEducation() {
   return (
     <div>
-      <h2>Work Experience</h2>
+      <h2>Education</h2>
       <form>
         <section className="form">
-          <label for="input-company">
+          <label for="input-course">
             <input
               type="text"
-              id="input-company"
-              name="company"
-              placeholder="company"
+              id="input-course"
+              name="course"
+              placeholder="course/program"
             ></input>
           </label>
 
-          <label for="input-position">
+          <label for="input-university">
             <input
               type="text"
-              id="input-position"
-              name="position"
-              placeholder="position"
+              id="input-university"
+              name="university"
+              placeholder="university"
             ></input>
           </label>
 

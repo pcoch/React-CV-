@@ -2,13 +2,17 @@ import React from "react";
 
 export default function OutputEducation() {
   return (
-    <div>
-      OutputEducation Cupidatat sunt anim incididunt nisi labore sunt nulla
-      Lorem elit irure. Aliquip quis excepteur et nostrud enim irure nostrud
-      officia. Et deserunt et aliquip voluptate elit cupidatat. Adipisicing enim
-      minim do anim eiusmod est. Irure laboris anim voluptate proident. Cillum
-      reprehenderit est magna minim. Nostrud ex aute laborum ea irure amet ea
-      ipsum ut non minim anim nisi.
+    <div className="education-list">
+      <h3>Education</h3>
+      <div className="education-container">
+        <div className="education-heading">
+          <h5>CS50: Introduction to Computer Science</h5>
+          <h5>
+            <span className="university-title">Harvard University | </span>2020
+            – Present
+          </h5>
+        </div>
+      </div>
     </div>
   );
 }
