@@ -1,15 +1,17 @@
 import React from "react";
 
-export default function OutputEducation() {
+export default function OutputEducation(props) {
   return (
     <div className="education-list">
       <h3>Education</h3>
       <div className="education-container">
         <div className="education-heading">
-          <h5>CS50: Introduction to Computer Science</h5>
+          <h5>{props.educationForm.course}</h5>
           <h5>
-            <span className="university-title">Harvard University | </span>2020
-            – Present
+            <span className="university-title">
+              {props.educationForm.university} |{" "}
+            </span>
+            {props.educationForm.startdate}– {props.educationForm.enddate}
           </h5>
         </div>
       </div>

@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function InputEducation() {
+export default function InputEducation(props) {
   return (
     <div>
       <h2>Education</h2>
@@ -8,46 +8,45 @@ export default function InputEducation() {
         <section className="form">
           <label htmlFor="input-course">
             <input
+              onChange={props.handleEducationChange}
               type="text"
               id="input-course"
               name="course"
               placeholder="course/program"
+              value={props.educationForm.course}
             ></input>
           </label>
 
           <label htmlFor="input-university">
             <input
+              onChange={props.handleEducationChange}
               type="text"
               id="input-university"
               name="university"
               placeholder="university"
+              value={props.educationForm.university}
             ></input>
           </label>
 
           <label htmlFor="input-start-date">
             <input
+              onChange={props.handleEducationChange}
               type="text"
               id="input-start-date"
-              name="start-date"
+              name="startdate"
               placeholder="start-date"
+              value={props.educationForm.startdate}
             ></input>
           </label>
 
           <label htmlFor="input-end-date">
             <input
+              onChange={props.handleEducationChange}
               type="text"
               id="input-end-date"
-              name="end-date"
+              name="enddate"
               placeholder="end-date"
-            ></input>
-          </label>
-
-          <label htmlFor="input-description">
-            <input
-              type="text"
-              id="input-description"
-              name="description"
-              placeholder="description"
+              value={props.educationForm.enddate}
             ></input>
           </label>
           <div className="button-container">

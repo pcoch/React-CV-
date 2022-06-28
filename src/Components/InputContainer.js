@@ -7,33 +7,18 @@ export default function InputContainer(props) {
   return (
     <div className="InputContainer">
       <InputPersonalDetails
-        UpdateName={props.UpdateName}
-        PersonName={props.PersonName}
-        UpdateTitle={props.UpdateTitle}
-        JobTitle={props.JobTitle}
-        UpdatePhone={props.UpdatePhone}
-        Phone={props.Phone}
-        UpdateEmail={props.UpdateEmail}
-        Email={props.Email}
-        UpdateLocation={props.UpdateLocation}
-        Location={props.Location}
-        UpdateDescription={props.UpdateDescription}
-        Description={props.Description}
+        handlePersonalChange={props.handlePersonalChange}
+        personalForm={props.personalForm}
       />
       <InputWorkExperience
-        UpdateCompany={props.UpdateCompany}
-        Company={props.Company}
-        UpdatePosition={props.UpdatePosition}
-        Position={props.Position}
-        UpdateStartDate={props.UpdateStartDate}
-        StartDate={props.StartDate}
-        UpdateEndDate={props.UpdateEndDate}
-        EndDate={props.EndDate}
-        UpdateJobDescription={props.UpdateJobDescription}
-        JobDescription={props.JobDescription}
+        handleWorkChange={props.handleWorkChange}
+        workForm={props.workForm}
       />
 
-      <InputEducation />
+      <InputEducation
+        handleEducationChange={props.handleEducationChange}
+        educationForm={props.educationForm}
+      />
     </div>
   );
 }

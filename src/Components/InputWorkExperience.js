@@ -1,12 +1,6 @@
 import React from "react";
 
 export default function InputWorkExperience(props) {
-  // const addForm = () => {};
-
-  // const deleteForm = () => {
-  //   //only delete 2nd form, can't delete first
-  // };
-
   return (
     <div>
       <h2>Work Experience</h2>
@@ -14,56 +8,56 @@ export default function InputWorkExperience(props) {
         <section className="form">
           <label htmlFor="input-company">
             <input
-              onChange={props.UpdateCompany}
+              onChange={props.handleWorkChange}
               type="text"
               id="input-company"
               name="company"
               placeholder="company"
-              value={props.Company}
+              value={props.workForm.company}
             ></input>
           </label>
 
           <label htmlFor="input-position">
             <input
-              onChange={props.UpdatePosition}
+              onChange={props.handleWorkChange}
               type="text"
               id="input-position"
               name="position"
               placeholder="position"
-              value={props.Position}
+              value={props.workForm.position}
             ></input>
           </label>
 
           <label htmlFor="input-start-date">
             <input
-              onChange={props.UpdateStartDate}
+              onChange={props.handleWorkChange}
               type="text"
               id="input-start-date"
-              name="start-date"
+              name="startdate"
               placeholder="start-date"
-              value={props.StartDate}
+              value={props.workForm.startdate}
             ></input>
           </label>
 
           <label htmlFor="input-end-date">
             <input
-              onChange={props.UpdateEndDate}
+              onChange={props.handleWorkChange}
               type="text"
               id="input-end-date"
-              name="end-date"
+              name="enddate"
               placeholder="end-date"
-              value={props.EndDate}
+              value={props.workForm.enddate}
             ></input>
           </label>
 
           <label htmlFor="input-description">
             <textarea
-              onChange={props.UpdateJobDescription}
+              onChange={props.handleWorkChange}
               type="text"
               id="input-description"
               name="description"
               placeholder="description"
-              value={props.JobDescription}
+              value={props.workForm.description}
             ></textarea>
           </label>
           <div className="button-container">

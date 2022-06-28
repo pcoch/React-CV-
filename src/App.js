@@ -7,115 +7,66 @@ import "./Styles/Input.css";
 
 function App() {
   //state for personal details list
-  //state for name
-  const [PersonName, setName] = useState("Crystal Smith");
-  const UpdateName = (e) => {
-    setName(e.target.value);
+  const [personalForm, setPersonalForm] = useState({
+    name: "Crystal Smith",
+    title: "Software Developer",
+    phone: "1234 456 789",
+    email: "smitty@gmail.com",
+    location: "Brissy",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+  });
+
+  const handlePersonalChange = (e) => {
+    const { name, value } = e.target;
+    console.log(name, value);
+    setPersonalForm({ ...personalForm, [name]: value });
   };
 
-  //state for title
-  const [JobTitle, setTitle] = useState("Software Engineer");
-  const UpdateTitle = (e) => {
-    setTitle(e.target.value);
+  // state for work experience
+  const [workForm, setWorkForm] = useState({
+    company: "Shopify",
+    position: "Software Developer",
+    startdate: "2018",
+    enddate: "Present",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  });
+
+  const handleWorkChange = (e) => {
+    const { name, value } = e.target;
+    console.log(name, value);
+    setWorkForm({ ...workForm, [name]: value });
   };
 
-  //state for phone
-  const [Phone, setPhone] = useState("0408 777 010");
-  const UpdatePhone = (e) => {
-    setPhone(e.target.value);
-  };
+  //state for education
+  const [educationForm, setEducationForm] = useState({
+    course: "Computer Science Degree",
+    university: "Harvard University",
+    startdate: "2015",
+    enddate: "2018",
+  });
 
-  //state for email
-  const [Email, setEmail] = useState("smitty@gmail.com");
-  const UpdateEmail = (e) => {
-    setEmail(e.target.value);
-  };
-
-  //state for location
-  const [Location, setLocation] = useState("Brisbane");
-  const UpdateLocation = (e) => {
-    setLocation(e.target.value);
-  };
-
-  //state for description
-  const [Description, setDescription] = useState(
-    "Ut fugiat minim qui voluptate culpa. Elit nostrud ex ad incididunt incididunt eiusmod. Officia cupidatat culpa commodo nisi nostrud. Ut fugiat minim qui voluptate culpa. Elit nostrud ex ad incididunt incididunt eiusmod. Officia cupidatat culpa commodo nisi nostrud."
-  );
-  const UpdateDescription = (e) => {
-    setDescription(e.target.value);
-  };
-
-  //state for work experience list
-  //state for company
-  const [Company, setCompany] = useState("Shopify");
-  const UpdateCompany = (e) => {
-    setCompany(e.target.value);
-  };
-
-  //state for position
-  const [Position, setPosition] = useState("Software Engineer");
-  const UpdatePosition = (e) => {
-    setPosition(e.target.value);
-  };
-
-  //state for start date
-  const [StartDate, setStartDate] = useState("2018");
-  const UpdateStartDate = (e) => {
-    setStartDate(e.target.value);
-  };
-
-  //state for End date
-  const [EndDate, setEndDate] = useState("Present");
-  const UpdateEndDate = (e) => {
-    setEndDate(e.target.value);
-  };
-
-  //state for End date
-  const [JobDescription, setJobDescription] = useState(
-    "This job is rad. This is some text about how rad it is."
-  );
-  const UpdateJobDescription = (e) => {
-    setJobDescription(e.target.value);
+  const handleEducationChange = (e) => {
+    const { name, value } = e.target;
+    console.log(name, value);
+    setEducationForm({ ...educationForm, [name]: value });
   };
 
   return (
     <div className="App">
       <InputContainer
-        UpdateName={UpdateName}
-        PersonName={PersonName}
-        UpdateTitle={UpdateTitle}
-        JobTitle={JobTitle}
-        UpdatePhone={UpdatePhone}
-        Phone={Phone}
-        UpdateEmail={UpdateEmail}
-        Email={Email}
-        UpdateLocation={UpdateLocation}
-        Location={Location}
-        UpdateDescription={UpdateDescription}
-        Description={Description}
-        UpdateCompany={UpdateCompany}
-        Company={Company}
-        UpdatePosition={UpdatePosition}
-        Position={Position}
-        UpdateStartDate={UpdateStartDate}
-        StartDate={StartDate}
-        UpdateEndDate={UpdateEndDate}
-        EndDate={EndDate}
-        UpdateJobDescription={UpdateJobDescription}
-        JobDescription={JobDescription}
+        handlePersonalChange={handlePersonalChange}
+        personalForm={personalForm}
+        handleWorkChange={handleWorkChange}
+        workForm={workForm}
+        handleEducationChange={handleEducationChange}
+        educationForm={educationForm}
       />
       <OutputContainer
-        PersonName={PersonName}
-        JobTitle={JobTitle}
-        Phone={Phone}
-        Email={Email}
-        Location={Location}
-        Description={Description}
-        Company={Company}
-        Position={Position}
-        StartDate={StartDate}
-        EndDate={EndDate}
-        JobDescription={JobDescription}
+        personalForm={personalForm}
+        workForm={workForm}
+        educationForm={educationForm}
       />
     </div>
   );

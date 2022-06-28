@@ -6,13 +6,13 @@ export default function OutputWorkExperience(props) {
       <h3>Work Experience</h3>
       <div className="experience-container">
         <div className="experience-heading">
-          <h5>{props.Position}</h5>
+          <h5>{props.workForm.position}</h5>
           <h5>
-            <span className="company-title">{props.Company} | </span>
-            {props.StartDate} - {props.EndDate}
+            <span className="company-title">{props.workForm.company} | </span>
+            {props.workForm.startdate} - {props.workForm.enddate}
           </h5>
         </div>
-        <p className="experience-body">{props.JobDescription}</p>
+        <p className="experience-body">{props.workForm.description}</p>
       </div>
     </div>
   );
