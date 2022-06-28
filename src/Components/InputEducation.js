@@ -6,7 +6,7 @@ export default function InputEducation() {
       <h2>Education</h2>
       <form>
         <section className="form">
-          <label for="input-course">
+          <label htmlFor="input-course">
             <input
               type="text"
               id="input-course"
@@ -15,7 +15,7 @@ export default function InputEducation() {
             ></input>
           </label>
 
-          <label for="input-university">
+          <label htmlFor="input-university">
             <input
               type="text"
               id="input-university"
@@ -24,7 +24,7 @@ export default function InputEducation() {
             ></input>
           </label>
 
-          <label for="input-start-date">
+          <label htmlFor="input-start-date">
             <input
               type="text"
               id="input-start-date"
@@ -33,7 +33,7 @@ export default function InputEducation() {
             ></input>
           </label>
 
-          <label for="input-end-date">
+          <label htmlFor="input-end-date">
             <input
               type="text"
               id="input-end-date"
@@ -42,7 +42,7 @@ export default function InputEducation() {
             ></input>
           </label>
 
-          <label for="input-description">
+          <label htmlFor="input-description">
             <input
               type="text"
               id="input-description"
