@@ -9,6 +9,7 @@ export default function OutputContainer(props) {
     <div className="OutputContainer">
       <OutputHeader personalForm={props.personalForm} />
       <OutputDescription personalForm={props.personalForm} />
+      <h3>Work Experience</h3>
       <OutputWorkExperience workForm={props.workForm} />
       <OutputEducation educationForm={props.educationForm} />
     </div>

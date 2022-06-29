@@ -3,7 +3,6 @@ import React from "react";
 export default function OutputWorkExperience(props) {
   return (
     <div className="experience-list">
-      <h3>Work Experience</h3>
       <div className="experience-container">
         <div className="experience-heading">
           <h5>{props.workForm.position}</h5>

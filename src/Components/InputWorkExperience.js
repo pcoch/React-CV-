@@ -3,14 +3,13 @@ import React from "react";
 export default function InputWorkExperience(props) {
   return (
     <div>
-      <h2>Work Experience</h2>
       <form>
         <section className="form">
           <label htmlFor="input-company">
             <input
               onChange={props.handleWorkChange}
               type="text"
-              id="input-company"
+              id={props.workForm.id}
               name="company"
               placeholder="company"
               value={props.workForm.company}
@@ -60,10 +59,6 @@ export default function InputWorkExperience(props) {
               value={props.workForm.description}
             ></textarea>
           </label>
-          <div className="button-container">
-            <button>Delete</button>
-            <button>Add</button>
-          </div>
         </section>
       </form>
     </div>

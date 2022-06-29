@@ -6,7 +6,7 @@ import "./Styles/Output.css";
 import "./Styles/Input.css";
 
 function App() {
-  //state for personal details list
+  //state for personal details form
   const [personalForm, setPersonalForm] = useState({
     name: "Crystal Smith",
     title: "Software Developer",
@@ -19,11 +19,10 @@ function App() {
 
   const handlePersonalChange = (e) => {
     const { name, value } = e.target;
-    console.log(name, value);
     setPersonalForm({ ...personalForm, [name]: value });
   };
 
-  // state for work experience
+  // state for work experience form
   const [workForm, setWorkForm] = useState({
     company: "Shopify",
     position: "Software Developer",
@@ -35,11 +34,10 @@ function App() {
 
   const handleWorkChange = (e) => {
     const { name, value } = e.target;
-    console.log(name, value);
     setWorkForm({ ...workForm, [name]: value });
   };
 
-  //state for education
+  //state for education form
   const [educationForm, setEducationForm] = useState({
     course: "Computer Science Degree",
     university: "Harvard University",
@@ -49,7 +47,6 @@ function App() {
 
   const handleEducationChange = (e) => {
     const { name, value } = e.target;
-    console.log(name, value);
     setEducationForm({ ...educationForm, [name]: value });
   };
 
