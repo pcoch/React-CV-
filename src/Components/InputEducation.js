@@ -49,10 +49,6 @@ export default function InputEducation(props) {
               value={props.educationForm.enddate}
             ></input>
           </label>
-          <div className="button-container">
-            <button>Delete</button>
-            <button>Add</button>
-          </div>
         </section>
       </form>
     </div>
